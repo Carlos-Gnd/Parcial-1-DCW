@@ -373,78 +373,92 @@ h3{
 }
 
 /*cursos*/
+/* ===== CURSOS ===== */
 
-.contador{
-background:#1e2a3a;
-color:#ffd000;
-padding:12px;
-border-radius:8px;
-margin-bottom:20px;
-font-weight:bold;
+.cursos{
+    max-width: 900px;
+    margin: 20px auto;
 }
 
-.formulario{
-background:white;
-padding:15px;
-border-radius:8px;
-margin-bottom:20px;
+/* contador */
+.cursos .contador{
+    background:#1e2a3a;
+    color:#ffd000;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:20px;
+    font-weight:bold;
 }
 
-.formulario input{
-padding:8px;
-margin:5px;
+/* formulario */
+.cursos .formulario{
+    background:white;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:20px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
 }
 
-.formulario button{
-padding:8px 12px;
-background:#00509d;
-color:white;
-border:none;
-border-radius:5px;
-cursor:pointer;
+.cursos .formulario input{
+    width:100%;
+    padding:8px;
+    margin-bottom:8px;
+    border:1px solid #ccc;
+    border-radius:5px;
 }
 
-.lista-cursos{
-display:flex;
-gap:15px;
-flex-wrap:wrap;
+.cursos .formulario button{
+    padding:8px 12px;
+    background:#00509d;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
 }
 
-.curso{
-background:#f5f3e9;
-border-left:5px solid #c9a227;
-padding:15px;
-border-radius:8px;
-width:200px;
+.cursos .formulario button:hover{
+    background:#f39c12;
+    color:black;
 }
 
-.curso button{
-margin-top:10px;
-background:#d9534f;
-color:white;
-border:none;
-padding:6px;
-cursor:pointer;
-border-radius:4px;
+/* listado de cursos */
+.cursos .lista-cursos{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
 }
 
-.info{
-    background: #f5f3e9;
-    border-left: 5px solid #c9a227;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 15px;
+/* tarjeta curso */
+.cursos .curso{
+    background:#f5f3e9;
+    border-left:5px solid #c9a227;
+    padding:15px;
+    border-radius:8px;
+    width:220px;
 }
 
-.info h3{
-    color: #0b3d91;
-    margin-bottom: 5px;
+.cursos .curso h4{
+    color:#0b3d91;
+    margin-bottom:5px;
 }
 
-.info p{
-    font-size: 0.95rem;
+.cursos .curso p{
+    font-size:0.9rem;
 }
 
+.cursos .curso button{
+    margin-top:10px;
+    background:#d9534f;
+    color:white;
+    border:none;
+    padding:6px 10px;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.cursos .curso button:hover{
+    background:#b52b27;
+}
 .footer{
     background-color: #002855;
     color: white;
