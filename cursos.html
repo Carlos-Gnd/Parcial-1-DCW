@@ -1,76 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Universitario</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://www.univo.edu.sv/wp-content/uploads/2020/07/escudo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cursos</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
-        <img src="https://www.univo.edu.sv/wp-content/uploads/2020/07/escudo.png" alt="Logo UNIVO" class="logo">
-        <h1>UNIVERSIDAD DE ORIENTE</h1>
-    </header>
+    <script src="script.js"></script>
 
-    <!-- Navegación -->
-    <nav class="nav">
-        <a class="active" href="/index.html"><strong>🏠 Inicio</strong></a>
-        <a href="/cursos.html"><strong>📚 Cursos</strong></a>
-        <a href="/calendario.html"><strong>📅 Calendario</strong></a>
-        <a href="/contacto.html"><strong>📞 Contacto</strong></a>
-    </nav>
+<h2>📚 CURSOS</h2>
 
-    <main class="layout">
-        <!-- Sección de Inicio -->
-        <section class="Inicio">
-            <div class="tarjetas mision">
-                <h2>Misión</h2>
-                <p>Formar profesionales responsables, competentes y comprometidos con el bien común de las presentes y futuras generaciones de la región oriental de El Salvador, con actitudes y aptitudes para insertarse productivamente en el mercado nacional e internacional</p>
-            </div>
+<div class="contador">
+📊 Cursos disponibles: <span id="contador">0</span>
+</div>
 
-            <div class="tarjetas vision">
-                <h2>Visión</h2>
-                <p>Ser la universidad de mayor prestigio en el oriente de El Salvador, Reconocida a nivel nacional e internacional por brindar educación integral y de calidad</p>
-            </div>
+<!-- FORMULARIO -->
+<div class="formulario">
+<h3>Agregar Curso</h3>
 
-            <div class="tarjetas valores">
-                <h2>Valores</h2>
-                    Respeto <br>
-                    Responsabilidad <br>
-                    Justicia <br>
-                    Honestidad <br>
-                    Igualdad <br>
-                    Solidaridad <br>
-            </div>
+<input type="text" id="nombre" placeholder="Nombre del curso">
+<input type="text" id="docente" placeholder="Docente">
+<input type="text" id="horario" placeholder="Horario">
+<input type="text" id="aula" placeholder="Aula">
+<input type="text" id="materia" placeholder="Materia">
+<button onclick="agregarCurso()">Agregar curso</button>
 
-            <div class="tarjetas estadisticas">
-                <h2>Estadísticas</h2>
-                cantidad de estudiantes: 5000 <br>
-                cantidad de docentes: 300 <br>
-                cantidad de carreras: 42 <br>
-                cantidad de facultades: 4 <br>
-            </div>
+</div>
 
-         </section>
+<!-- LISTADO -->
+<div id="lista-cursos" class="lista-cursos"></div>
 
-        <!-- siderbar -->
-        <aside class="aside">
-            <h3>Accesos Rapidos</h3>
-            <ul>
-                <li>🗂️ Campus Virtual</li>
-                <li>📚 Biblioteca</li>
-                <li>📰 Correo Institucional</li>
-                <li>📅 Calendario Académico</li>
-                <li>📝 Tramites en Linea</li>
-            </ul>
+<script src="script.js"></script>
 
-        </aside>
-    </main>
-    <!-- Footer -->
 </body>
-
 </html>
