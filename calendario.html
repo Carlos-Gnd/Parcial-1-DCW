@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Calendario</title>
 </head>
+
 <body>
-            <!-- Header -->
+    <!-- Header -->
     <header class="header">
         <img src="https://www.univo.edu.sv/wp-content/uploads/2020/07/escudo.png" alt="Logo UNIVO" class="logo">
         <h1>UNIVERSIDAD DE ORIENTE</h1>
@@ -15,70 +17,120 @@
 
     <!-- Navegación -->
     <nav class="nav">
-        <a class="active" href="/index.html"><strong>🏠 Inicio</strong></a>
+        <a href="/index.html"><strong>🏠 Inicio</strong></a>
         <a href="/cursos.html"><strong>📚 Cursos</strong></a>
-        <a href="/calendario.html"><strong>📅 Calendario</strong></a>
+        <a class="active" aria-current="page" href="/calendario.html"><strong>📅 Calendario</strong></a>
         <a href="/contactos.html"><strong>📞 Contacto</strong></a>
     </nav>
 
-    <!-- ÍNDICE DE CALENDARIO ACADÉMICO -->
-<section class="indice">
-    <h2>📑 Índice del Calendario Académico 2026</h2>
+    <main class="layout">
+        <!-- ÍNDICE DE CALENDARIO ACADÉMICO -->
+        <section class="indice calendario-panel">
+            <h2>📑 Índice del Calendario Académico 2026</h2>
 
+            <section id="inicio-clases">
+                <h3>📅 Inicio y Fin de Clases</h3>
+                <div id="fechas-clases">
+                    <div class="fecha">
+                        <h4>Inicio de Clases</h4>
+                        <p><strong>10 de marzo, 2026</strong></p>
+                    </div>
+                    <div class="fecha">
+                        <h4>Fin de Clases</h4>
+                        <p><strong>15 de diciembre, 2026</strong></p>
+                    </div>
+                </div>
+            </section>
 
-<!-- CONTENIDO CON ANCLAS -->
-<section id="inicio-clases">
-    <h3>📅 Inicio y Fin de Clases</h3>
-    <div id="fechas-clases">
-        <div class="fecha">
-            <h4>Inicio de Clases</h4>
-            <p><strong>10 de marzo, 2026</strong></p>
-        </div>
-        <div class="fecha">
-            <h4>Fin de Clases</h4>
-            <p><strong>15 de diciembre, 2026</strong></p>
+            <section id="periodos-examenes">
+                <h3>✏️ Períodos de Exámenes</h3>
+                <div id="fechas-examenes">
+                    <div class="fecha">
+                        <h4>Exámenes Parciales</h4>
+                        <p>15-20 de junio, 2026</p>
+                    </div>
+                    <div class="fecha">
+                        <h4>Exámenes Finales</h4>
+                        <p>1-10 de diciembre, 2026</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dias-festivos">
+                <h3>🎉 Días Festivos</h3>
+                <div id="fechas-festivos">
+                    <div class="fecha">
+                        <h4>Día de la Independencia</h4>
+                        <p>15 de septiembre, 2026</p>
+                    </div>
+                    <div class="fecha">
+                        <h4>Día de los Difuntos</h4>
+                        <p>2 de noviembre, 2026</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="vacaciones">
+                <h3>🏖️ Vacaciones Programadas</h3>
+                <div id="fechas-vacaciones">
+                    <div class="fecha">
+                        <h4>Vacaciones de Verano</h4>
+                        <p>15 de junio - 15 de septiembre, 2026</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="aside">
+            <h3>Accesos Rapidos</h3>
+            <ul>
+                <li>🗂️ Campus Virtual</li>
+                <li>📚 Biblioteca</li>
+                <li>📰 Correo Institucional</li>
+                <li>📅 Calendario Académico</li>
+                <li>📝 Tramites en Linea</li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Universidad de Oriente</h3>
+                <p>Formando profesionales con excelencia desde 1976</p>
+                <div class="social-icons">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Twitter">𝕏</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="LinkedIn">in</a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p>📍 Blvd. Universitario, San Miguel</p>
+                <p>📞 2860-7234</p>
+                <p>✉️ info@univo.edu.sv</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Enlaces útiles</h3>
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                </ul>
+            </div>
         </div>
 
-    </div>
-
-</section>
-
-<section id="periodos-examenes">
-    <h3>✏️ Períodos de Exámenes</h3>
-    <div id="fechas-examenes">
-        <div class="fecha">
-            <h4>Exámenes Parciales</h4>
-            <p>15-20 de junio, 2026</p>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Universidad De Oriente — <span class="abreviatura">Univo</span></p>
+            <p>Carlos Alberto Granados Amaya U20240579</p>
+            <p>René Francisco Pacheco Araniva U20240844</p>
         </div>
-        <div class="fecha">
-            <h4>Exámenes Finales</h4>
-            <p>1-10 de diciembre, 2026</p>
-        </div>
-    </div>
-</section>
-
-<section id="dias-festivos">
-    <h3>🎉 Días Festivos</h3>
-    <div id="fechas-festivos">
-        <div class="fecha">
-            <h4>Día de la Independencia</h4>
-            <p>15 de septiembre, 2026</p>
-        </div>
-        <div class="fecha">
-            <h4>Día de los Difuntos</h4>
-            <p>2 de noviembre, 2026</p>
-        </div>
-    </div>
-</section>
-<section id="vacaciones">
-    <h3>🏖️ Vacaciones Programadas</h3>
-    <div id="fechas-vacaciones">
-        <div class="fecha">
-            <h4>Vacaciones de Verano</h4>
-            <p>15 de junio - 15 de septiembre, 2026</p>
-        </div>
-    </div>
-</section>
-    
+    </footer>
 </body>
+
 </html>
